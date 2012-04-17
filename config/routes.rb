@@ -1,4 +1,11 @@
 Chocolate::Application.routes.draw do
+  
+  resources :users
+
+  resources :customers, :only => [:create]
+  
+  match '/', :to => 'users#new'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +55,7 @@ Chocolate::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+#  root :to => 'users'
 
   # See how all your routes lay out with "rake routes"
 

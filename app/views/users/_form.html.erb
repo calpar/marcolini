@@ -1,0 +1,29 @@
+<%= form_for (@user) do |f| %>
+
+	<table style='width:100%'>
+					<tr>
+			<td>
+				<p style='color:silver;'>Name</p>
+			</td>
+			<td>
+				<p style='color:silver;'>Email</p>
+			</td>
+			<td>
+				<p style='color:silver;'></p>
+			</td>					
+		</tr>
+		<tr>
+			<td>
+				 <%= f.text_field :name %>
+			</td>
+			<td>
+				<%= f.text_field :email %>
+			</td>
+			<td >
+				<%= f.hidden_field :group, :value => "A" %>
+				<%= f.submit :value => "Submit" %>
+			</td>					
+		</tr>
+	</table>
+
+<% end %>
