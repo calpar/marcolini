@@ -40,3 +40,5 @@ gem 'jquery-rails'
 
 source :gemcutter
 gem 'sinatra', '1.0'
+
+gem "pg", "~> 0.13.2"
