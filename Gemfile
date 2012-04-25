@@ -37,3 +37,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug'
+
+source :gemcutter
+gem 'sinatra', '1.0'
